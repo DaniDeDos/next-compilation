@@ -63,32 +63,6 @@ npm run start:dev
 
 - Open your browser and navigate to http://localhost:3000.
 
-### Configure environment variables
-
-- Install dependencies
-
-```bash
-npm i nestjs/config
-```
-
-- Update `src/app.module.ts`
-
-> import dependency
-
-```nestjs
-import { ConfigModule } from '@nestjs/config';
-```
-
-> import module
-
-```nestjs
-@Module({
-  imports: [
-    ConfigModule.forRoot()
-  ],
-})
-```
-
 ## TypeORM
 
 - Install dependencies
@@ -115,8 +89,8 @@ import { TypeOrmModule } from '@nestjs/typeorm';
 
 > import module
 
-````nestjs
- TypeOrmModule.forRoot({
+```nestjs
+  TypeOrmModule.forRoot({
       type: 'postgres',
       host: process.env.DB_HOST,
       port: +process.env.DB_PORT,
@@ -126,5 +100,4 @@ import { TypeOrmModule } from '@nestjs/typeorm';
       autoLoadEntities: true,
       synchronize: true,
     }),
-    ```
-````
+```
