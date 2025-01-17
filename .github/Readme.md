@@ -10,7 +10,7 @@
   - NestJS
     - [First steps](#first-steps)
     - [Create a new project](#get-started)
-    - [Configure environment variables](configure-environment-variables)
+    - [Logger server startup](https://github.com/DaniDeDos/next-compilation/tree/main/example/nest/logger-main)
   - TypeORM
     - test
 
