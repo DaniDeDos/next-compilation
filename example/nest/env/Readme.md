@@ -10,7 +10,7 @@
 npm i nestjs/config
 ```
 
-### 2. Update `src/app.module.ts`
+### 2. Update file `src/app.module.ts`
 
 - import dependency
 
@@ -28,13 +28,13 @@ import { ConfigModule } from '@nestjs/config';
 })
 ```
 
-### 3. Create `.env`
+### 3. Create file `.env`
 
 ```bash
 PORT=<puerto-app>
 ```
 
-### 4. Update `main.ts`
+### 4. Update file `main.ts`
 
 - add console.log()
 
@@ -42,4 +42,12 @@ PORT=<puerto-app>
   console.log(
     `Server running on http://localhost:${process.env.PORT ?? 3000}/api`,
   );
+```
+
+### 5. Create file `.env.template`
+
+- declare empty variable
+
+```bash
+PORT=
 ```
