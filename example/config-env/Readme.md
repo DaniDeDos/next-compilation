@@ -6,13 +6,13 @@
 
 ### Configure environment variables
 
-- Install dependencies
+1. Install dependencies
 
 ```bash
 npm i nestjs/config
 ```
 
-- Update `src/app.module.ts`
+2. Update `src/app.module.ts`
 
 > import dependency
 
@@ -30,8 +30,18 @@ import { ConfigModule } from '@nestjs/config';
 })
 ```
 
-- Create `.env`
+3. Create `.env`
 
 ```bash
 PORT=<puerto-app>
+```
+
+4. Update `main.ts`
+
+> add console.log()
+
+```nestjs
+  console.log(
+    `Server running on http://localhost:${process.env.PORT ?? 3000}/api`,
+  );
 ```
