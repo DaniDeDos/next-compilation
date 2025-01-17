@@ -32,7 +32,7 @@ const logger = new Logger('Main');
   <summary><b>capture</b></summary>
 
 <br>
-<p align="center">
+<p>
   <img src="../../../public/assets/img/logger-main-code.png"  width="480" alt="logger code example" />
 </p>
 
