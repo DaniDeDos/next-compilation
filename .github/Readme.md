@@ -7,10 +7,14 @@
 # Índice
 
 - [Índice](#Índice)
-  - [First Steps](#first-steps)
-  - [Create a new project](#get-started)
+  - NestJS
+    - [First steps](#first-steps)
+    - [Create a new project](#get-started)
+    - [Configure environment variables](configure-environment-variables)
+  - TypeORM
+    - test
 
-# First Steps
+# First steps
 
 ## Prerequisites
 
@@ -58,3 +62,69 @@ npm run start:dev
 > `Nota:` Recuerda estar en el path del proyecto actual.
 
 - Open your browser and navigate to http://localhost:3000.
+
+### Configure environment variables
+
+- Install dependencies
+
+```bash
+npm i nestjs/config
+```
+
+- Update `src/app.module.ts`
+
+> import dependency
+
+```nestjs
+import { ConfigModule } from '@nestjs/config';
+```
+
+> import module
+
+```nestjs
+@Module({
+  imports: [
+    ConfigModule.forRoot()
+  ],
+})
+```
+
+## TypeORM
+
+- Install dependencies
+
+```bash
+npm i nestjs/typeorm typeorm
+```
+
+- Install dependency for database connection
+
+> PostgreSQL
+
+```bash
+npm i pg
+```
+
+- Update `src/app.module.ts`
+
+> import dependency
+
+```nestjs
+import { TypeOrmModule } from '@nestjs/typeorm';
+```
+
+> import module
+
+````nestjs
+ TypeOrmModule.forRoot({
+      type: 'postgres',
+      host: process.env.DB_HOST,
+      port: +process.env.DB_PORT,
+      database: process.env.DB_NAME,
+      username: process.env.DB_USERNAME,
+      password: process.env.DB_PASSWORD,
+      autoLoadEntities: true,
+      synchronize: true,
+    }),
+    ```
+````
