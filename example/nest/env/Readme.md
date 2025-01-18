@@ -1,8 +1,12 @@
-<p align="center">
-  <a href="http://nestjs.com/" target="blank"><img src="https://nestjs.com/img/logo-small.svg" width="120" alt="Nest Logo" /></a>
+<h1 align="center">Environment Variables</h1>
+
+<p align="right">
+  <a href="http://nestjs.com/" target="blank"><img src="https://nestjs.com/img/logo-small.svg" width="48" alt="Nest Logo" /></a>
 </p>
 
-<h1 align="center">Configure environment variables</h1>
+<p align="center">
+  <img src="../../../public/assets/img/env-file.png"  width="480" alt=".env file example" />
+</p>
 
 ### 1. Install dependencies
 
@@ -51,3 +55,13 @@ PORT=<puerto-app>
 ```bash
 PORT=
 ```
+
+<details closed>
+  <summary><b>capture</b></summary>
+
+<br>
+<p>
+  <img src="../../../public/assets/img/env-var-example.png"  width="480" alt="env code example" />
+</p>
+
+</details>
