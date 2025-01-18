@@ -5,7 +5,7 @@
 </p>
 
 <p align="center">
-  <img src="../../../public/assets/img/env-file.png"  width="480" alt=".env file example" />
+  <img src="../../../public/assets/img/env-file.png"  width="240" alt=".env file example" />
 </p>
 
 ### 1. Install dependencies
@@ -65,3 +65,5 @@ PORT=
 </p>
 
 </details>
+
+- ##### [official documentation](https://docs.nestjs.com/techniques/configuration)
