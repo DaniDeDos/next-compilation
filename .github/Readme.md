@@ -7,10 +7,14 @@
 # Índice
 
 - [Índice](#Índice)
+
   - NestJS
+
     - [First steps](#first-steps)
     - [Create a new project](#get-started)
     - [Logger server startup](https://github.com/DaniDeDos/next-compilation/tree/main/example/nest/logger-main)
+    - [Global prefix](https://github.com/DaniDeDos/next-compilation/tree/main/example/nest/global-prefix)
+
   - TypeORM
     - test
 
