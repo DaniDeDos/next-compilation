@@ -14,6 +14,7 @@
     - [Create a new project](#get-started)
     - [Logger server startup](https://github.com/DaniDeDos/next-compilation/tree/main/example/nest/logger-main)
     - [Global prefix](https://github.com/DaniDeDos/next-compilation/tree/main/example/nest/global-prefix)
+    - [Environment Variables](https://github.com/DaniDeDos/next-compilation/tree/main/example/nest/env)
 
   - TypeORM
     - test
